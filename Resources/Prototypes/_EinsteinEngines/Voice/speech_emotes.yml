@@ -1,0 +1,36 @@
+- type: emote
+  id: SiliconDeathgasp
+  name: chat-emote-name-deathgasp
+  icon: Interface/Emotes/deathgasp.png
+  chatMessages: ["chat-emote-msg-deathgasp-silicon"]
+  whitelist: # Mono - IPC's, borgs, protogens
+    components:
+    - Silicon
+    - BorgChassis
+  chatTriggers:
+  - sdeathgasp
+
+- type: emote
+  id: Whirr
+  name: chat-emote-name-whirr
+  category: Vocal
+  chatMessages: [ whirrs ]
+  whitelist: # Mono - IPC's, borgs, protogens
+    components:
+    - Silicon
+    - BorgChassis
+  chatTriggers:
+    - whirrs
+    - rattles
+
+- type: emote
+  id: Boop
+  name: chat-emote-name-boop
+  category: Vocal
+  chatMessages: [ boops ]
+  whitelist: # Mono - IPC's, borgs, protogens
+    components:
+    - Silicon
+    - BorgChassis
+  chatTriggers:
+  - boops

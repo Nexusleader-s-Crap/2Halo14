@@ -1,0 +1,23 @@
+- type: entity
+  id: LockableButtonMailCarrier
+  suffix: Mail
+  parent: LockableButton
+  components:
+  - type: AccessReader
+    access: [["Mail"]]
+
+- type: entity
+  id: LockableButtonPirate
+  suffix: PDV
+  parent: LockableButton
+  components:
+  - type: AccessReader
+    access: [["Pirate"]]
+
+- type: entity
+  id: LockableButtonTSFMC
+  suffix: TSFMC
+  parent: LockableButton
+  components:
+  - type: AccessReader
+    access: [["Security"]]

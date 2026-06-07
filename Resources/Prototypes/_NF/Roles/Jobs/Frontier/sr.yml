@@ -1,0 +1,59 @@
+- type: job
+  id: StationRepresentative
+  name: job-name-sr
+  description: job-description-sr
+  playTimeTracker: JobHeadOfPersonnel
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 360000 # 100 hrs
+    - !type:RoleTimeRequirement
+      role: JobSecurityGuard
+      time: 18000 # 5 hrs as security guard - mono
+    # Factions are required here because Overseer needs to actually understand how both factions work.
+    - !type:RoleTimeRequirement
+      role: JobPirate
+      time: 36000 # 10 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 # 10 hours
+  whitelisted: false
+  startingGear: SrGear
+  alwaysUseSpawner: true
+  assignedCompany: Colonial
+  icon: "JobIconHeadOfSecurity" # Mono
+  requireAdminNotify: true
+  supervisors: job-supervisors-centcom
+  weight: 170
+  displayWeight: 60 # Top
+  canBeAntag: false
+  accessGroups:
+  - AllAccessMono #Mono
+  access:
+  - HeadOfPersonnel #Mono
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ] # Mono - remove TSFMC implant
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+      #- type: NpcFactionMember - Commented out to seperate them from TSFMC.
+      #  factions:
+      #  - TSFMC
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+
+- type: startingGear
+  id: SrGear
+  equipment:
+    pocket1: WeaponEnergyGunLawbringer
+  storage:
+    back:
+    - Flash
+    - RubberStampSr
+    - DoorRemoteCommand
+    - EncryptionKeyCentCom
+    - EncryptionKeyStationMasterSR #Mono start
+    - EncryptionKeyDiplomacy
+    - ShipVoucherFrontierGuard
+    - PhoneInstrumentHigh

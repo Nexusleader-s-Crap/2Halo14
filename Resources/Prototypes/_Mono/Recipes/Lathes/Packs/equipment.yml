@@ -1,0 +1,9 @@
+- type: latheRecipePack
+  id: VoidBoots
+  recipes:
+  - ClothingShoesBootsMagVoid
+
+- type: latheRecipePack
+  id: CarpEquipment
+  recipes:
+  - ClothingOuterHardsuitCarp
