@@ -13,7 +13,7 @@
 - type: pointOfInterest
   id: TSFMCHalcyon
   parent: [BasePOI, BaseRepairablePOI]
-  name: 'TSFMC Flagship Halcyon'
+  name: 'UNSC Flagship Halcyon'
   minimumDistance: 4500 # Mono
   maximumDistance: 5500 # Mono
   spawnGamePreset: [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoTSFUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
@@ -28,7 +28,7 @@
 
 - type: gameMap
   id: TSFMCHalcyon
-  mapName: 'TSFMC Flagship Halcyon'
+  mapName: 'UNSC Flagship Halcyon'
   mapPath: /Maps/_Mono/POI/tsfmchalcyon.yml
   minPlayers: 0
   randomRotation: false
@@ -37,10 +37,10 @@
       stationProto: SecurityFrontierOutpost
       gridComponents:
       - type: VesselInfo
-        description: "A mothballed battleship-turned-FOB, and Home of the TSFMC operations."
+        description: "A mothballed battleship-turned-FOB, and Home of the UNSC operations."
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'TSFMC Flagship Halcyon'
+          mapNameTemplate: 'UNSC Flagship Halcyon'
         - type: ExtraStationInformation
           icon:
             sprite: _NF/Structures/Decoration/banner.rsi

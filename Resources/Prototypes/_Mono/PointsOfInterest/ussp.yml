@@ -11,7 +11,7 @@
 - type: pointOfInterest
   id: USSPCamelot
   parent: [BasePOI, BaseRepairablePOI]
-  name: 'Camelot Station'
+  name: 'Insurrectionalist Camelot Station'
   minimumDistance: 10650
   maximumDistance: 12400
   spawnGamePreset: [ NFAdventure, NFPirate, MonoStandard, MonoRogueUSSP, MonoTSFUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
@@ -23,7 +23,7 @@
 
 - type: gameMap
   id: USSPCamelot
-  mapName: 'Camelot Station'
+  mapName: 'Insurrectionalist Camelot Station'
   mapPath: /Maps/_Mono/POI/camelot.yml
   minPlayers: 0
   stations:
@@ -36,7 +36,7 @@
           description: "A rickety old station once owned by a now decrepit interstellar power. Cold and dark."
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Camelot Station'
+          mapNameTemplate: 'Insurrectionalist Camelot Station'
         - type: ExtraStationInformation
           icon:
             sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
@@ -48,9 +48,9 @@
           availableJobs:
             # USSPCommissar: [1, 1]
             # USSPSergeant: [4, 4]
-            # USSPCorporal: [6, 6]
+            USSPCorporal: [1, 1]
             # USSPMedic: [4, 4]
-            # USSPRifleman: [-1, -1]
+            USSPRifleman: [-1, -1]
             Contractor: [-1, -1]
             Pilot: [0, -1]
             Mercenary: [0, -1]
